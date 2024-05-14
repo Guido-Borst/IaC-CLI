@@ -1,0 +1,72 @@
+# MacOS
+## Ignore desktop services files.
+**/.DS_Store
+
+# Certificates and Keys
+## Ignore certificates files.
+**/*.cer
+**/*.crt
+**/*.p7b
+## Ignore public key files
+**/*.pub
+id_ansible*
+
+# HashiCorp Packer
+## Ignore cache directories.
+packer_cache/
+## Ignore crash log files.
+crash.log
+## Ignore packerlog files.
+packerlog*.txt
+
+# HashiCorp Terraform
+## Ignore .terraform directories.
+**/.terraform/*
+.terraform.lock.hcl
+## Ignore .tfstate files
+*.tfstate
+*.tfstate.*
+## Ignore crash.log files.
+crash.log
+## Ignore .tfvars files.
+*.tfvars
+## Ignore override files.
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+## Ignore configuration files.
+.terraformrc
+terraform.rc
+
+# Configurations
+## Ignore default config directory.
+config/
+
+# Artifacts
+## Ignore artifacts directory.
+artifacts/*.mf
+artifacts/*.nvram
+artifacts/*.ovf
+artifacts/*.vmdk
+
+# Manifests
+## Ignore manifests directory.
+manifests/*.json
+
+# Trunk.io
+## Ignore trunk directory.
+.trunk/actions
+.trunk/logs
+.trunk/notifications
+.trunk/out
+.trunk/plugins/trunk
+.trunk/trunk.yaml
+
+# Virtual environment
+## Ignore venv directory.
+venv/
+provisioningvenv/
+
+# Temporary files
+**/__pycache__/

@@ -1,0 +1,52 @@
+##################################################################################
+# VARIABLES
+##################################################################################
+
+# Credentials
+vsphere_server   = "use vault integration"
+vsphere_username = "use vault integration"
+vsphere_password = "use vault integration"
+vsphere_insecure = true
+vault_app_name = "app name from Hashicorp Vault here"
+
+HCP_CLIENT_ID     = "<VAULT CLIENT ID HERE>"
+HCP_CLIENT_SECRET = "<VAULT CLIENT SECRET HERE>"
+
+
+# vSphere Settings
+vsphere_datacenter          = "use vault integration"
+vsphere_cluster             = "use vault integration"
+vsphere_datastore           = "use vault integration"
+vsphere_folder              = "use vault integration"
+vsphere_network             = "VM Network"
+vsphere_content_library     = "use vault integration"
+vsphere_content_library_ovf = "linux-debian-11.6-main"
+vsphere_host                = "use vault integration"
+
+# Virtual Machines Settings
+vm_name                    = "Will be overwritten by script"
+vm_cpus                    = 2
+vm_memory                  = 4096
+vm_disk_size               = 100
+vm_firmware                = "efi"
+vm_efi_secure_boot_enabled = true
+vm_hostname                = "hostname"
+vm_domain                  = "<DOMAIN HERE>"
+wait_for_guest_net_timeout = 5
+wait_for_guest_net_routable = true
+
+#vm_ipv4_address            = "172.16.100.192"
+#vm_ipv4_netmask            = "24"
+#vm_ipv4_gateway            = "172.16.11.1"
+#vm_dns_suffix_list         = ["rainpole.io"]
+#vm_dns_server_list         = ["172.16.11.4", "172.16.11.5"]
+#domain                     = "rainpole.io"
+#domain_admin_username      = "svc-domain-join@rainpole.io"
+#domain_admin_password      = "VMware1!"
+vm_admin_username          = "use vault integration"
+vm_admin_password          = "use vault integration"
+
+# vSphere Portgroup Settings
+pg_name                    = "portgroup-1"
+pg_vlan_id                 = 2
+pg_allow_promiscuous       = true
